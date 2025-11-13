@@ -144,14 +144,6 @@
                       class="full-width rounded-borders q-py-sm"
                       size="lg"
                     />
-                    <q-btn
-                      color="grey-7"
-                      icon="arrow_back"
-                      label="Seguir Comprando"
-                      outline
-                      class="full-width rounded-borders q-py-sm"
-                      size="lg"
-                    />
                   </div>
                 </div>
 
@@ -350,5 +342,47 @@ watch(totalFinal, (nuevo) => {
 .slide-down-leave-to {
   opacity: 0;
   transform: translate(-50%, -20px);
+}
+
+@media (max-width: 600px) {
+  .notificacion-custom {
+    top: 20px;
+    font-size: 14px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    min-width: 240px;
+    max-width: 85%;
+  }
+
+  .notificacion-custom .q-icon {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .notificacion-custom {
+    top: 25px;
+    font-size: 16px;
+    padding: 18px 25px;
+    min-width: 320px;
+  }
+
+  .notificacion-custom .q-icon {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .notificacion-custom {
+    top: 40px;
+    font-size: 20px;
+    padding: 24px 35px;
+    min-width: 450px;
+    border-radius: 24px;
+  }
+
+  .notificacion-custom .q-icon {
+    font-size: 36px;
+  }
 }
 </style>
