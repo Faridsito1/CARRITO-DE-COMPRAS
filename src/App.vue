@@ -247,7 +247,7 @@ watch(carrito, (nuevo) => {
 
 watch(totalFinal, (nuevo) => {
   if (nuevo > 5000000) {
-    mostrarToast('⚠️ El total supera los $5.000.000', 'advertencia', 'warning')
+    mostrarToast('⚠️ El total supera los $5.000.000, Tienes ENVIO GRATIS', 'advertencia', 'warning')
   }
 })
 </script>
